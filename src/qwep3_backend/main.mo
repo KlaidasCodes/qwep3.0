@@ -1,6 +1,6 @@
 import Time "mo:base/Time"
 
-actor mainActor {
+actor qwep {
   // just prepping the functions for now
   public query func retrieveJsonBlob(): async Int {
     return 0;
@@ -17,5 +17,9 @@ actor mainActor {
   public func initializeJsonBlob() {
     var c = 1;
   };
+
+  public query func testButton(): async Text {
+    return "Scary stuff is happening but the button is working!"
+  }
 }
 
