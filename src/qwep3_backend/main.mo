@@ -1,4 +1,5 @@
-import Time "mo:base/Time"
+// import Time "mo:base/Time";
+import Debug "mo:base/Debug";
 
 actor qwep {
   // just prepping the functions for now
@@ -20,6 +21,10 @@ actor qwep {
 
   public query func testButton(): async Text {
     return "Scary stuff is happening but the button is working!"
-  }
+  };
+
+  public func testButton2() {
+    Debug.print("Just in case I need this instead of a return to test the button");
+  };
 }
 
