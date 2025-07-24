@@ -26,6 +26,5 @@ actor qwep {
   public func testButton2() {
     Debug.print("Just in case I need this instead of a return to test the button");
   };
-  // test
 }
 
