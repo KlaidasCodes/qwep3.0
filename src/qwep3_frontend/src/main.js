@@ -1,4 +1,4 @@
-import { qwep3_backend } from "../../declarations/qwep3_backend"
+// import { qwep3_backend } from "../../declarations/qwep3_backend"
 
 
 document.getElementById("button1").addEventListener("click", async () => {
