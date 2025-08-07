@@ -6,6 +6,9 @@ h1 {
 html {
     /* constant font throughout */
     font-family: 'Courier New', Courier, monospace;
+}
+
+body {
     min-height: 100vh;
     background: linear-gradient(45deg,  #84e7da, #174db1);
     background-repeat: no-repeat;
@@ -114,4 +117,45 @@ html {
 .button_font {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
+}
+
+.dark_red_theme {
+    min-height: 100vh;
+    background: linear-gradient(45deg,  #20040c, #b50303);
+    background-repeat: no-repeat;
+}
+
+.dark_purple_theme {
+    min-height: 100vh;
+    background: linear-gradient(45deg,  #4a027a, #bd0aa5);
+    background-repeat: no-repeat;
+}
+
+.depressing_theme {
+    min-height: 100vh;
+    background: linear-gradient(45deg,  #000000, #888487);
+    background-repeat: no-repeat;
+}
+
+#dark_red {
+    grid-row: 4;
+    min-height: 15vh;
+    background: linear-gradient(45deg,  #20040c, #b50303);
+}
+
+#dark_purple {
+    grid-row: 4;
+    background: linear-gradient(45deg,  #4a027a, #bd0aa5);
+}
+
+#depression {
+    grid-row: 4;
+    background: linear-gradient(45deg,  #000000, #888487);
+}
+
+.colors {
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* border-width: ; */
 }

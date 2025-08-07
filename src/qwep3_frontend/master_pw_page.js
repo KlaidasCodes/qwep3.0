@@ -8,7 +8,11 @@ const textToChange = document.getElementById("master");
 
 submitMasterPwButton.addEventListener("click", () => {
     var masterPassword = enteredPassword.value;
-    textToChange.innerText = masterPassword;
+    if (masterPassword.length < 1) {
+        textToChange.innerText = "Please enter a valid password";    
+    } else {
+        textToChange.innerText = "Password entered: " + masterPassword;        
+    }
     enteredPassword.value = "";
 })
 
