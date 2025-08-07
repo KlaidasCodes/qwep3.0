@@ -14,6 +14,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.default_theme {
+    background: linear-gradient(45deg,  #84e7da, #174db1);
+    background-repeat: no-repeat;    
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -127,7 +132,7 @@ body {
 
 .dark_purple_theme {
     min-height: 100vh;
-    background: linear-gradient(45deg,  #4a027a, #bd0aa5);
+    background: linear-gradient(45deg,  #020103, #bd0aa5);
     background-repeat: no-repeat;
 }
 
@@ -145,7 +150,7 @@ body {
 
 #dark_purple {
     grid-row: 4;
-    background: linear-gradient(45deg,  #4a027a, #bd0aa5);
+    background: linear-gradient(45deg,  #020103, #bd0aa5);
 }
 
 #depression {

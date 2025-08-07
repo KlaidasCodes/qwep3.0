@@ -7,7 +7,7 @@ const darkPurpleButton = document.getElementById("dark_purple");
 const darkDepressingButton= document.getElementById("depression");
 
 
-
+localStorage.setItem("theme", "default_theme");
 
 function changingTheme() {
     console.log("The button works well!");
@@ -17,19 +17,22 @@ function changingTheme() {
 
 testFuntionalityButton.addEventListener("click", changingTheme);
 
+// just realized how ugly the following lines are, will need to create one function that is
+// reusable instead of multiple identical ones
+
 darkRedButton.addEventListener("click", () => {
-    document.body.classList.remove("dark_red_theme", "dark_purple_theme", "depressing_theme")
-    document.body.classList.add("dark_red_theme");
+    localStorage.setItem("theme", "dark_red_theme");
+    loadTheme();
 })
 
 darkPurpleButton.addEventListener("click", () => {
-    document.body.classList.remove("dark_red_theme", "dark_purple_theme", "depressing_theme")
-    document.body.classList.add("dark_purple_theme");
+    localStorage.setItem("theme", "dark_purple_theme");
+    loadTheme();
 })
 
 darkDepressingButton.addEventListener("click", () => {
-    document.body.classList.remove("dark_red_theme", "dark_purple_theme", "depressing_theme")
-    document.body.classList.add("depressing_theme");
+    localStorage.setItem("theme", "depressing_theme");
+    loadTheme();
 })
 
 
@@ -45,4 +48,20 @@ accessPasswordsButton.addEventListener("click", () => {
 deletePwManagerButton.addEventListener("click", () => {
     window.location.href = "del_pw_man.html";
 })
+
+
+function setThemeName(newThemeName) {
+    const body = document.body;
+    body.classList.remove("dark_red_theme", "dark_purple_theme", "depressing_theme", "default");
+    body.classList.add(newThemeName);
+}
+
+
+function loadTheme() {
+    const savedTheme = localStorage.getItem("theme");
+    setThemeName(savedTheme);
+}
+
+
+
 
