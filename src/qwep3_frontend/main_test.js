@@ -59,7 +59,7 @@ function setThemeName(newThemeName) {
 
 function loadTheme() {
     const savedTheme = localStorage.getItem("theme");
-    setThemeName(savedTheme);
+    setThemeName(savedTheme); 
 }
 
 
