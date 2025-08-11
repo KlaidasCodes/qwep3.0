@@ -35,7 +35,7 @@ body::before {
     opacity: 0.1;
     pointer-events: none;
 }
-
+/* just a small shameful contribution */
 .default_theme {
     background: linear-gradient(45deg,  #84e7da, #174db1);
     background-repeat: no-repeat;    
